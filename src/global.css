@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'Kids Magazine';
+  src: url('/fonts/Kids Magazine.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-kids-magazine {
+  font-family: 'Kids Magazine';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Kids Magazine';
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Titillium Web", serif;
+  scroll-behavior: smooth;
+  transition: .5s;
+}
+.footer-linear {
+position: absolute;
+width: 100%;
+height: 150px;
+left: 0px;
+top: 0px;
+background: linear-gradient(180deg, rgba(27, 40, 56, 0) 0%, #1B2838 100%);
+transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.titillium-web-regular {
+  font-family: "Titillium Web", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.titillium-web-semibold {
+  font-family: "Titillium Web", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.titillium-web-bold {
+  font-family: "Titillium Web", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.titillium-web-black {
+  font-family: "Titillium Web", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+.text-stroke-1 {
+  -webkit-text-stroke: 1px #000000;
+}
+
+.text-stroke-1-5 {
+  -webkit-text-stroke: 1.5px #000000;
+}
+
+.text-stroke-2 {
+  -webkit-text-stroke: 2px #000000;
+}
+
+.text-shadow-2 {
+  text-shadow: 0px 2px 0px #000000;
+}
+
+.text-shadow-3 {
+  text-shadow: 0px 3px 0px #000000;
+}
+
+
+  /* Swiper specific styles */
+.swiper-container {
+  overflow: visible !important;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: -30px !important;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #999;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #FFA336;
+}
+
+/* Featured section styling */
+.featured-swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.featured-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Fix for "How to Buy" slider */
+.mySwiper {
+  overflow: visible !important;
+  padding: 20px 0;
+}
+
+/* Additional animation for featured section */
+@keyframes featuredAnimation {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.featured-slide:hover .bg-white {
+  animation: featuredAnimation 1s ease-in-out infinite;
+}
+
+/* Make sure sliders are visible on all screen sizes */
+@media (max-width: 768px) {
+  .mySwiper .swiper-slide {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+  
+  .swiper-pagination {
+    bottom: -20px !important;
+  }
+}
+
+
